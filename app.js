@@ -11,7 +11,7 @@ main()
         console.log("connected to mongo successfully..");
     })
     .catch((err) => {
-        console.log(err)
+        console.log(err);
     });
 
 async function main() {
