@@ -4,97 +4,56 @@
     <h3 class="mb-3">Create a new List</h3>
     <form method="POST" action="/listings" novalidate class="needs-validation">
         <div class="mb-3">
-            <label for="title"
-             class="form-label">
-                Title
-            </label>
-            <input type="text" 
-             name="listing[title]"
-             placeholder="Enter Title"
-             id="title"
-             class="form-control"
-             required
-            >
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="listing[title]" placeholder="Enter Title" id="title" class="form-control" required>
+            <div class="valid-feedback">Title looks good.</div>
+            <div class="invalid-feedback">Title should be valid!</div>
         </div>
 
         <div class="mb-3">
-            <label for="description" 
-             class="form-label">
-                Description
-            </label>
-            <textarea type="text" 
-             name="listing[description]" 
-             placeholder="enter description"
-             class="form-control">
-            </textarea>
+            <label for="description" class="form-label">Description</label>
+            <textarea type="text" name="listing[description]" placeholder="enter description" class="form-control" required></textarea>
+            <div class="valid-feedback">Description looks good.</div>
+            <div class="invalid-feedback">Description should be valid!</div>
         </div>
 
         <div class="row">
         <div class="mb-3 col-lg-4">
-            <label for="image-name"
-             class="form-label">
-                Image Name
-            </label>
-            <input type="text" 
-             name="listing[image-name]" 
-             placeholder="enter image filename"
-             class="form-control"
-             required
-            >
+            <label for="image-name" class="form-label">Image Name</label>
+            <input type="text" name="listing[image-name]" placeholder="enter image filename" class="form-control">
+            <div class="valid-feedback">Filename looks good.</div>
+            <div class="invalid-feedback">Filename should be valid!</div>
         </div>
 
         <div class="mb-3 col-lg-8">
-            <label for="image-url"
-             class="form-label">
-                Image Url
-            </label>
-            <input type="text" 
-             name="listing[image-url]" 
-             placeholder="enter image-url"
-             class="form-control"
-            >
+            <label for="image-url" class="form-label">Image Url</label>
+            <input type="text" name="listing[image-url]" placeholder="enter image-url" class="form-control" required>
+            <div class="valid-feedback">Image Url looks good.</div>
+            <div class="invalid-feedback">Image Url should be valid!</div>
         </div>
         </div>
 
         <div class="row">
         <div class="mb-3 col-lg-6">
-            <label for="price"
-             class="form-label">
-                Price
-            </label>
-            <input type="number" 
-             name="listing[price]" 
-             placeholder="enter price"
-             class="form-control"
-             required
-            >
+            <label for="price" class="form-label">Price</label>
+            <input type="number" name="listing[price]" placeholder="enter price"class="form-control" required>
+            <div class="valid-feedback">Price looks good.</div>
+            <div class="invalid-feedback">Price should be valid!</div>
         </div>
 
         <div class="mb-3 col-lg-6">
-            <label for="location"
-             class="form-label">
-                Location
-            </label>
-            <input type="text" 
-             name="listing[location]" 
-             placeholder="enter location"
-             class="form-control"
-             required
-            >
+            <label for="location" class="form-label">Location</label>
+            <input type="text" name="listing[location]" placeholder="enter location" class="form-control" required>
+            <div class="valid-feedback">Location looks good.</div>
+            <div class="invalid-feedback">Location should be valid!</div>
         </div>
         </div>
 
         <div class="mb-3">
-            <label for="country"
-             class="form-label">
-                Country
-            </label>
-            <input type="text" 
-             name="listing[country]" 
-             placeholder="enter country"
-             class="form-control" 
-             required
-            >
+            <label for="country" class="form-label">Country</label>
+            <input type="text" name="listing[country]" placeholder="enter country" class="form-control" required>
+            <div class="valid-feedback">Country looks good.</div>
+            <div class="invalid-feedback">Country should be valid!</div>
         </div>
         <button class="btn btn-dark add-btn mt-3 mb-3">Add</button>
     </form>
