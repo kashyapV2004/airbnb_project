@@ -20,14 +20,14 @@
         <div class="row">
         <div class="mb-3 col-lg-3">
             <label for="image-name" class="form-label">Image Name</label>
-            <input type="text" name="listing[image-name]" class="form-control" value="<%=listing.image.filename%>">
+            <input type="text" name="listing[image][filename]" class="form-control" value="<%=listing.image.filename%>">
             <div class="valid-feedback">Filename looks good.</div>
             <div class="invalid-feedback">Filename should be valid!</div>
         </div>
 
         <div class="mb-3 col-lg-9">
             <label for="image-url" class="form-label">Image Url</label>
-            <input type="text" name="listing[image-url]" class="form-control" value="<%=listing.image.url%>" required>
+            <input type="text" name="listing[image][url]" class="form-control" value="<%=listing.image.url%>" required>
             <div class="valid-feedback">Image Url looks good.</div>
             <div class="invalid-feedback">Image Url should be valid!</div>        
         </div>
@@ -36,7 +36,7 @@
         <div class="row">
         <div class="mb-3 col-lg-6">
             <label for="price" class="form-label">Price</label>
-            <input type="number" name="listing[price]" class="form-control" value="<%=listing.price%>" required>
+            <input type="text" name="listing[price]" class="form-control" value="<%=listing.price%>" required>
             <div class="valid-feedback">Price looks good.</div>
             <div class="invalid-feedback">Price should be valid!</div>     
         </div>

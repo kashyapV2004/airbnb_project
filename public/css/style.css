@@ -12,7 +12,7 @@ body{
     background-color: rgb(244, 244, 244);
     border: none;
 }
-.fa-compass {
+.navbar-brand {
     color: #fe424d;
 }
 .nav-link {
@@ -29,6 +29,12 @@ body{
     text-decoration: underline;
     color: #305f7e;
 }
+
+.navbar-brand:hover{
+    text-decoration: underline;
+    color: #305f7e;
+}
+
 
 .f-info-links,.f-info-socials, .f-info-brand {
     width: 100%;
@@ -54,7 +60,7 @@ body{
 }
 
 /* cards */
-.card {
+.listing-card {
     border: none !important;
     margin-bottom: 2rem;
 }
