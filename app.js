@@ -1,3 +1,7 @@
+if(process.env.NODE_ENV != "production"){
+    require("dotenv").config();
+}
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -11,14 +15,14 @@ const passport = require("passport")
 const localSrategy = require("passport-local");
 const User = require("./models/user.js");
 
-const cors=require("cors");
+// const cors=require("cors");
 
 const listingsRouters = require("./routes/listing.js");
 const reviewsRouters = require("./routes/review.js");
 const userRouters = require("./routes/user.js");
 
 // Enable CORS for all routes
-app.use(cors());
+// app.use(cors());
 
 const mongo_url = 'mongodb://127.0.0.1:27017/wanderlust';
 main()
@@ -51,9 +55,9 @@ const sessionOptions = {
     }
 };
 
-app.get("/", (req, res)=>{
-    res.send("hi, I'm root..");
-});
+// app.get("/", (req, res)=>{
+//     res.send("hi, I'm root..");
+// });
 
 app.use(session(sessionOptions));
 app.use(flash());
