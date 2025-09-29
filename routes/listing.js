@@ -7,7 +7,6 @@ const multer = require("multer");
 const { storage } = require("../cloudConfig.js");
 const upload = multer({storage: storage});
 
-
 router
 .route("/")
 //all listings
